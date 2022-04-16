@@ -6,18 +6,25 @@
 //
 
 #import "SceneDelegate.h"
+#import "AllListsViewController.h"
+#import "DataModel.h"
 
 @interface SceneDelegate ()
 
 @end
 
-@implementation SceneDelegate
+@implementation SceneDelegate {
+    DataModel *_dataModel;
+}
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    // 在iOS13 以及更新的版本，如果要访问window.rootViewController 需要在sceneDelegate进行
+    _dataModel = [[DataModel alloc] init];
+    
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    AllListsViewController *controller = navigationController.viewControllers[0];
+    controller.dataModel = _dataModel;
 }
 
 
@@ -26,6 +33,7 @@
     // This occurs shortly after the scene enters the background, or when its session is discarded.
     // Release any resources associated with this scene that can be re-created the next time the scene connects.
     // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+    [self saveData];
 }
 
 
@@ -51,7 +59,12 @@
     // Called as the scene transitions from the foreground to the background.
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
+    [self saveData];
 }
 
+- (void)saveData
+{
+  [_dataModel saveChecklists];
+}
 
 @end
