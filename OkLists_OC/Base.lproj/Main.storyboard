@@ -46,7 +46,7 @@
                                 <rect key="frame" x="16" y="49.5" width="343" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wGW-Mq-vlG" id="tzJ-2G-OJV">
-                                    <rect key="frame" x="0.0" y="0.0" width="290" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UL-yQ-mS5">
@@ -133,7 +133,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Notification" id="caK-H6-CoS">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zZA-0d-00C">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="zZA-0d-00C">
                                         <rect key="frame" x="16" y="143" width="343" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zZA-0d-00C" id="IVc-BJ-UK8">
@@ -159,7 +159,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="S3B-DT-15E">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="S3B-DT-15E">
                                         <rect key="frame" x="16" y="186.5" width="343" height="52.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S3B-DT-15E" id="Tq7-I4-abg">
@@ -205,7 +205,7 @@
                                 <action selector="cancel:" destination="76e-up-iyc" id="CNh-OX-Yua"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="5tZ-q6-9Ly">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="done" id="5tZ-q6-9Ly">
                             <connections>
                                 <action selector="done:" destination="76e-up-iyc" id="BCv-LI-efU"/>
                             </connections>
@@ -311,7 +311,7 @@
                                 <action selector="cancel" destination="r1a-b7-z8H" id="h57-ZX-mDa"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="MJ8-5b-zcM">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="done" id="MJ8-5b-zcM">
                             <connections>
                                 <action selector="done" destination="r1a-b7-z8H" id="zhS-V9-Set"/>
                             </connections>

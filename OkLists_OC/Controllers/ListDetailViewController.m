@@ -37,8 +37,8 @@
     self.iconImageView.image = [UIImage systemImageNamed:_iconName];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
     [self.UITextField becomeFirstResponder];
 }
